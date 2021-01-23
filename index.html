@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="#s">
+    <meta name="reply-to" content="#">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="description" content="#">
+    <meta name="keywords" content="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação de Qualidade</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <link href="css/css.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="img/flavicon.png">
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+ 
+        </script>
+</head>
+<body>
+    <header id="home" >
+        <div>
+            <div class="container">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Educação de Qualidade">
+                </div>
+                <nav>
+                    <div class="topnav" id="myTopnav">
+                        <a href="#home" class="active">Home</a>
+                        <a href="#base">Base</a>
+                        <a href="#pilares">Pilares</a>
+                        <a href="#mercado">Mercado</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                      </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="pag-banner"  >
+        <div class="banner">
+            <div id="slider">
+                <img class="selected" src="img/banner1.png" alt="">
+                <img src="img/banner2.png" alt="">
+                <img src="img/banner3.png" alt=""> 
+            </div>
+            <script>
+                time = 4000;
+                currentImageIndex = 0;
+                images = document.querySelectorAll("#slider img");
+                max = images.length;
+
+                function nextImage() {
+
+                    images[currentImageIndex].classList.remove("selected")
+
+                    currentImageIndex++
+
+                    if(currentImageIndex >= max)
+                        currentImageIndex = 0
+
+                    images[currentImageIndex].classList.add("selected")
+                }
+
+                function start() {
+                    setInterval(() => {
+                        nextImage()
+                    }, time)
+                }
+
+                window.addEventListener("load", start)
+            </script>
+        </div>
+    </section>
+
+    <section id="base">
+        <div class="container">
+            <h2 class="titulo" >A Base da Educação de Qualidade</h2>
+            <div class="coluna50">
+                <div class="pd-15">
+                    <p>Depois de cinco anos de intensos debates entre a comunidade educacional e pressão de organizações de direitos humanos, agora o Fundo de Manutenção e Desenvolvimento da Educação Básica e Valorização dos Profissionais da Educação (Fundeb), que financia a educação básica brasileira – da educação infantil ao ensino médio -, passa a integrar a Constituição Federal de maneira permanente. A vitória garante ainda mais recursos para creches e escolas públicas, e é um passo importante rumo à superação das desigualdades educacionais no país.</p>
+                    <p>Além de seu caráter permanente, o fundo passa a contar com mais verba da União para o financiamento da educação. A complementação de verbas federais sobre o valor total arrecadado por estados e municípios que é de 10% será ampliada gradualmente até atingir 23% a partir de 2026. Hoje, o Fundeb representa 63% do investimento público em educação básica. Em 2019, os recursos do Fundeb chegaram a R$ 166,6 bilhões. </p>
+                </div>    
+            </div>
+            <div class="coluna50">
+                <div class="pd-15">
+                    <img src="img/1.jpg" class="page-img" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="pag-pilares" id="pilares">
+        <div class="container">
+            <h2 class="titulo" >Os quatro pilares da educação</h2>
+            <div class="pilares">
+                <div class="pd-15"> <img src="img/pilares.png"   alt=""> </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="mercado">
+        <div class="container">
+            <h2 class="titulo" >Educação de qualidade muda tudo, inclusive o mercado de trabalho</h2>
+            <div class="coluna50">
+                <div class="pd-15">
+                    <img src="img/educacao.jpg" class="page-img" alt="">
+                </div>
+            </div>
+            <div class="coluna50">
+                <div class="pd-15"> 
+                    <p>Os graves problemas da Educação brasileira não terminam na sala de aula. É fora dela que suas lacunas se manifestam com toda  força, minando o desenvolvimento do País. Quando essa ficha caiu para a Federação das Indústrias do Estado de Santa Catarina – FIESC em 2012, a instituição soube que não havia tempo a perder: era hora de movimentar o mercado. O compromisso da organização em mudar essa realidade se concretizou na fundação do Movimento Indústria pela Educação naquele ano que, mais tarde, com a inclusão de muitos colaboradores passaria a se chamar Santa Catarina pela Educação.</p>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+    
+
+
+    <footer>
+        <div class="container">
+            <div class="text-center">
+                <h3 id="creditos" class="branco justificado">Meu Primeiro Site</h3>
+                <p >Meu Primeiro Site é um programa desenvolvido pela Junior Achievement, em parceria com a Microsoft.</p>
+                <a href="https://www.jabrasil.org.br/" target="blanck"><img id="logofooter" src="img/junior.png"></a>
+                <a href="https://www.microsoft.com/pt-br" target="blanck"><img id="logofooter" src="img/microsoft.png"></a>
+            </div>
+        </div>    
+    </footer>
+
+</body>
+</html>
